@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>WeatherApp</h1>
+      <p class="subtitle">Devoloper weather App your location search any city.</p>
+    </header>
+
+    <section class="controls">
+      <input id="cityInput" type="text" placeholder="Enter city (e.g., New York)" />
+      <button id="searchBtn">Search</button>
+      <button id="locBtn">Your Location</button>
+    </section>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <div class="card">
+        <div class="top">
+          <h2 id="place">—</h2>
+          <p id="desc">—</p>
+        </div>
+        <div class="center">
+          <div class="temp">
+            <span id="temp">--</span><small>°C</small>
+          </div>
+          <div class="details">
+            <p>Feels: <span id="feels">--</span>°C</p>
+            <p>Humidity: <span id="humidity">--</span>%</p>
+            <p>Wind: <span id="wind">--</span> m/s</p>
+          </div>
+        </div>
+        <footer class="footer">
+          <small id="time">—</small>
+        </footer>
+      </div>
+    </section>
+
+    <footer class="note">
+      <p>Devoloper by bipul kumar<code>API_KEY</code> in <code>script.js</code>ap apna  OpenWeatherMap key enter kijiya.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
